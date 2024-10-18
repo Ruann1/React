@@ -1,5 +1,7 @@
 import './App.css'
-import HelloWorld from './components/HelloWorld'
+import FalaNome from './components/FalaNome'
+import DadosCliente from './components/DadosCliente'
+import Lista from './components/Lista'
 
 function App() {
   
@@ -11,7 +13,17 @@ function App() {
 return (
   <div className='App'>
     <h1>{soma(1, 2)}</h1>
-    <HelloWorld />
+
+    <FalaNome nome = 'Ruan'/>
+
+    <DadosCliente 
+    foto = 'https://cdn-icons-png.flaticon.com/512/6073/6073873.png'
+    nome = 'Ruan'
+    idade = '25'
+    profissao = 'Desempregado'
+    sexo = 'masculino'/> 
+
+    <Lista />
   </div>
 
 )
