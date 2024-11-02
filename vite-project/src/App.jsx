@@ -3,7 +3,7 @@ import Home from './pages/Home'
 import Contato from './pages/Contato';
 import Empresa from './pages/Empresa';
 import NavBar from './components/layout/NavBar';
-import Footer from './components/layout/Footer';
+import Rodape from './components/layout/Rodape';
 
 function App() {
   return (
@@ -13,12 +13,13 @@ function App() {
         <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route exact path="/" element={<Home />} /> 
+          <Route path="/" element={<Home />} /> 
           <Route path='/empresa' element={<Empresa />}/>
           <Route path='/contato' element={<Contato />}/>
         </Routes>
         </BrowserRouter>
-      
+        <Rodape />
+        
     </div>
     
 );
