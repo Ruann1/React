@@ -4,12 +4,15 @@ import Contato from './pages/Contato';
 import Empresa from './pages/Empresa';
 import NavBar from './components/layout/NavBar';
 import Rodape from './components/layout/Rodape';
+import Soma from './components/Soma';
 
-function App() {
+function App(a, b) {
+
   return (
     
     <div>
-      
+        
+        <Soma  />
         <BrowserRouter>
         <NavBar />
         <Routes>
