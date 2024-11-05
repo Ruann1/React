@@ -6,13 +6,13 @@ import NavBar from './components/layout/NavBar';
 import Rodape from './components/layout/Rodape';
 import Soma from './components/Soma';
 
-function App(a, b) {
+function App() {
 
   return (
     
     <div>
         
-        <Soma  />
+        <Soma  a={2} b={3}/>
         <BrowserRouter>
         <NavBar />
         <Routes>

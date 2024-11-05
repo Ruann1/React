@@ -1,9 +1,7 @@
-function Soma (a, b){
-    return (
-        <p>Soma: Soma({2, 3})</p>
+function Soma({a, b}){
+    return(
+        <p>Soma: {a + b}</p>
     )
-
 }
-
 
 export default Soma
