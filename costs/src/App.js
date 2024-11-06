@@ -5,6 +5,8 @@ import Contato from './components/pages/Contato';
 import NovoProjeto from './components/pages/novoProjeto';
 
 import Container from './components/layout/Container'
+
+
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
 
@@ -13,9 +15,10 @@ import Footer from './components/layout/Footer'
 function App() {
   return (
     <BrowserRouter>
+    <Navbar />
 
     <Container customClass='min-height'>
-      <Navbar />
+      
       <Routes>
         <Route path='/' element = {<Home />} />
         <Route path='/Empresa' element = {<Empresa />} />

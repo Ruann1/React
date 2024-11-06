@@ -1,8 +1,8 @@
 .navbar {
     display: flex;
-    justify-content: space-between;
     background-color: #222;
     padding: 1em;
+    height: 20vh;
 }
 
 .list {
@@ -12,7 +12,7 @@
 }
 
 .item{
-    margin-right: 1em;
+    margin-right: 2em;
 }
 
 .item a{
