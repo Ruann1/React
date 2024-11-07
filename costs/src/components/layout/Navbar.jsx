@@ -15,14 +15,17 @@ return(
             <img src= {logo} alt="Costs" />
         </Link>
 
-        <ul class={styles.list}>
-            <li class={styles.item}>
+        <ul className={styles.list}>
+            <li className={styles.item}>
                  <Link to='/'>Home</Link>
             </li>
-            <li class={styles.item}>
+            <li className={styles.item}>
+                <Link to='/Projects'>Projetos</Link>
+            </li>
+            <li className={styles.item}>
               <Link to='/Contato'>Contato</Link>
             </li>
-            <li class={styles.item}>
+            <li className={styles.item}>
                 <Link to='/Empresa'>Empresa</Link>
             </li>
         </ul>

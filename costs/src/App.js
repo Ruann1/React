@@ -1,8 +1,9 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './components/pages/Home';
 import Empresa from './components/pages/Empresa';
 import Contato from './components/pages/Contato';
 import NovoProjeto from './components/pages/novoProjeto';
+import Projects from './components/pages/Project';
 
 import Container from './components/layout/Container'
 
@@ -21,6 +22,7 @@ function App() {
       
       <Routes>
         <Route path='/' element = {<Home />} />
+        <Route path='/Projects' element = {<Projects />} />
         <Route path='/Empresa' element = {<Empresa />} />
         <Route path='/Contato' element = {<Contato />} />
         <Route path='/novoProjeto' element = {<NovoProjeto />} />
