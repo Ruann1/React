@@ -9,9 +9,9 @@ import logo from '../../img/costs_logo.png'
 function Navbar() {
 return(
 
-    <nav class={styles.navbar}>
+    <nav className={styles.navbar}>
         <Container>
-        <Link to= '/' >
+        <Link to= '/' className={styles.list}>
             <img src= {logo} alt="Costs" />
         </Link>
 
