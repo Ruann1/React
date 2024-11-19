@@ -3,7 +3,8 @@ import Home from './components/pages/Home';
 import Empresa from './components/pages/Empresa';
 import Contato from './components/pages/Contato';
 import NovoProjeto from './components/pages/novoProjeto';
-import Projects from './components/pages/Project';
+import Projects from './components/pages/Projects';
+import Project from './components/pages/Project'
 
 import Container from './components/layout/Container'
 
@@ -26,6 +27,7 @@ function App() {
         <Route path='/Empresa' element = {<Empresa />} />
         <Route path='/Contato' element = {<Contato />} />
         <Route path='/novoProjeto' element = {<NovoProjeto />} />
+        <Route path='/project/:id' element = {<Project />} />
       </Routes>
       
     </Container>

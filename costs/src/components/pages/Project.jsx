@@ -1,31 +1,35 @@
-import {useLocation} from 'react-router-dom'
+import styles from './Project.module.css'
 
-import Message from '../layout/Message'
-import Container from '../layout/Container'
-import LinkButton from '../layout/LinkButton'
+import { useParams } from 'react-router-dom'
+import {useState, useEffect} from 'react'
 
-import styles from './Projects.module.css'
+function Project() {
+    const { id } = useParams()
 
-function Projects() {
+    const[project, setProject] = useState([])
 
-    const location = useLocation()
-    let message = ''
-    if(location.state) {
-        message = location.state.message
-    }
+    useEffect(() => {
+        fetch(`http://localhost:5000/projects/${id}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type' : 'application/json',
+            },
+        
+    }).then(resp => resp.json())
+    .then((data) => {
+        setProject(data)
+    })
 
-    return (
-        <div className={styles.project_container}>
-            <div className={styles.title_container}>
-                <h1>Meus Projetos</h1>  
-                <LinkButton to='/novoProjeto' text='Criar Projeto' />
-            </div>
-            {message && <Message msg={message} type='success'/>}
-            <Container customClass='start'>
-                <p>Projetos...</p>
-            </Container>    
-        </div>
+    .catch(err => console.log)
+}, [id])
+
+    return(
+        <div>
+           {project &&(
+                <p>{project.name}</p>
+            )}
+       </div>
     )
-    }
-    
-    export default Projects
+}
+
+export default Project
