@@ -2,8 +2,8 @@
   "projects": [
     {
       "id": "9e60",
-      "name": "Ruan",
-      "budget": "22222222",
+      "name": "Projeto Atualizado",
+      "budget": "3221",
       "category": {
         "id": "1",
         "name": "infra"
