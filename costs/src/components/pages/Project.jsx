@@ -17,7 +17,7 @@ function Project() {
     const [project, setProject] = useState({});
     const [showProjectForm, setShowProjectForm] = useState(false);
     const [showServiceForm, setShowServiceForm] = useState(false);
-    const [services, setServices] = useState([]); // Inicializado como array vazio
+    const [services, setServices] = useState([]); 
     const [message, setMessage] = useState('');
     const [type, setType] = useState('');
 

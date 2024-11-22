@@ -32,7 +32,7 @@ function ServiceForm({ handleSubmit, btnText, projectData }) {
             <Input 
                type='number' 
                text='Custo do serviço'
-               name='name'
+               name='cost'
                placeholder='Insira o valor total'
                handleOnChange={handleChange}
             />
