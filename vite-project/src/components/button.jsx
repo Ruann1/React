@@ -10,7 +10,6 @@ function contador() {
             
             <p>Voce clicou no {conta} vezes</p>
             <button onClick={incremento}>Clique Aqui</button>
-
         </div>
     )
 }
